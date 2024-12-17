@@ -25,15 +25,13 @@
         padding-left: 44px;
     }
     
-    /* .main__arrow{
-        right: 5px;
-    } */
+    
 
 }
 
 @media screen and (max-width: 980px) {
     .hero__data{
-        /* padding-bottom: 30px; */
+       
 
     }
 
