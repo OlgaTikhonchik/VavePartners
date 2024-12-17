@@ -241,7 +241,20 @@
     .main__arrow{
         bottom: 220px;
     }
+
+   .article__button{
+    display: block; 
+        width: 180px;
+    margin-right: auto;
+  margin-left: auto;}
+
+  .h2, .title.high{
+    font-size: 22px;
+    line-height: 26px;
+  }
 }
+
+
 
     
 @media screen and (max-width: 466px){

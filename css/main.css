@@ -1,3 +1,7 @@
+@charset "utf-8";
+
+
+
 body{
     display: block;
     position: relative;
@@ -658,4 +662,39 @@ article > h4,
 
 .footer__link:hover{
   transform: scale(1.1);
+}
+
+
+/* -----------------guide----------------- */
+
+.breadcrumbs {
+  display: flex;
+  text-align: center;
+  margin-bottom: 16px;
+  white-space: nowrap;
+}
+
+.breadcrumbs li:not(:last-child) a {
+  padding-left: 0;
+}
+
+.breadcrumbs li a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.5px;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.breadcrumbs li:first-child a:hover{
+  color: #2BC69D;
+}
+
+.breadcrumbs li:last-child a{
+  font-weight: 900;
+}
+
+.breadcrumbs > li:not(:last-child):after {
+  content: '|';
+  position: relative;
 }
