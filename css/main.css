@@ -23,7 +23,7 @@ body{
     position: relative;
     width: 100%;
     max-width: 1160px;
-    /* overflow: hidden; */
+   
     border-radius: 16px;
     background: #202a32;
     padding: 20px;
@@ -36,7 +36,7 @@ h1, h2, h3,h4, .title{
  font-size: 43px;
  font-weight: 700;
  line-height: 51.6px;
- /* text-align: center; */
+ 
  color:#ffffff;
 
 }
@@ -193,8 +193,7 @@ article > h4,
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* max-width: 1440px; */
-    /* padding: 14px 140px; */
+   
     margin: 0 auto;
 }  
 
@@ -209,10 +208,8 @@ article > h4,
     left: 0;
     right: 0;
     height: 68px;
-    /* width: 100%; */
-    /* background: linear-gradient(to right, rgb(53, 68, 78) 0%, rgb(34, 45, 52) 50%, rgb(16, 23, 29) 100%); */
+   
     background: linear-gradient(90.00deg, rgb(50, 64, 74),rgb(32, 42, 50) 100%);
-    /* background: linear-gradient(#313f4b 0%, #313f4b 20%, #19232d 97%); */
     
     z-index: 100;
 }
@@ -222,13 +219,12 @@ article > h4,
     align-items: center;
     flex-direction: row;
     
-    /* height: 68px; */
+    
     border-radius: 0;
    
-    /* padding: 14px 40px; */
-    /* background: linear-gradient(90.00deg, rgb(50, 64, 74),rgb(32, 42, 50) 100%); */
+    
     background: none;
-    /* padding: 0; */
+   
     padding: 14px;
     margin: 0 auto;
     
@@ -286,7 +282,7 @@ article > h4,
   margin: 0;;
 }
 .header__flag,.header__flag-link{
-  /* position: relative; */
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -295,8 +291,10 @@ article > h4,
 }
 .header__flag-link{
   margin-left: 0;
-  padding: 8px 16px;
+ 
 }
+
+
 
 .header__flag span,.header__flag-link span {
   display: block;
@@ -339,8 +337,7 @@ article > h4,
 
 .header__flag-wrap {
   position: relative; 
-  /* display: inline-block;
-  cursor: pointer; */
+  
 }
 
 .header__flag-menu{
@@ -350,7 +347,7 @@ article > h4,
   right: 0;
   top: 75px;
  
-  /* max-width: 166px; */
+  
   max-width: 100%;
   width: 166px;
   height: 136px;
@@ -364,6 +361,10 @@ article > h4,
 .header__flag-menu ul{
   display: flex;
   flex-wrap: wrap;
+  
+    width:100%;
+   
+ 
 
 }
 
@@ -377,14 +378,20 @@ article > h4,
 }
 
 .header__flag-menu li{
-  display: flex;
-  /* width: calc(50% -10px); */
+  
+  width: 50%;
+  
+  padding: 8px 16px;
+    
 }
+ 
 
-/* .header__language {
-  position: relative;
-  overflow: visible ;
-} */
+
+
+.header__flag-menu li:nth-child(5n) a{
+  padding-left: 4px;}
+  .header__flag-menu li:nth-child(4n) a{
+    padding-right: 2px;}
 
 /* -------------- header__btn-menu-----------*/
 
@@ -416,9 +423,11 @@ article > h4,
   
     position: relative;
     display: block;
-    max-width: 1440px;
+   
     padding-top: 0; 
     padding-bottom: 70px;
+
+    margin: 0;
 }
 
 .main__wrap{
@@ -426,8 +435,10 @@ article > h4,
   display: flex;
   flex-direction: column;
   top: 68px;
-  max-width: 1440px;
+ 
   padding: 0 20px ;
+
+  margin: 0 auto;
  
   
   
@@ -448,28 +459,43 @@ article > h4,
 /* -----------hero---------- */
 
 .hero{
+  
+  background: #11171E;
+  
+  margin: 0;
+  padding: 0;
+
+}
+
+.hero__content{
   display: flex;
   position: relative;
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  height: 374px;
-  max-width: 1440px;
-  background: #11171E;
-  padding: 44px 0 44px  140px ;
-  margin-bottom: 20px;
+ 
+  height: auto;
+ 
   
+  
+  margin-bottom: 20px;
+
+  padding-left: calc(50% - (1160px / 2) );
+    padding-right: calc(50% - (1160px / 2));
+
   
 }
-
 
 
 .hero__data{
   display: flex;flex-direction: column;
   align-items: flex-start;
   max-width: 570px;
-  /* padding-left: 50px; */
+  
   z-index: 2;
+  padding: 32px 0 ;
+
+  
 }
 
 .hero__title{
@@ -484,9 +510,9 @@ article > h4,
 
 .hero__img{
   position: relative;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
-  left: 50%;
+  /* left: 50%; */
   right: 0;
   bottom: 0;
   
@@ -542,6 +568,7 @@ article > h4,
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: calc(50% - 10px);
     border-radius: 16px;
     background: #2A3842;
@@ -701,22 +728,3 @@ article > h4,
   position: relative;
 }
 
-/* ----------policy------ */
-
-.hero__images {
-  position: relative;
-  position: absolute;
-  top: 0;
-  
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
-.hero__images img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  object-fit: cover;
-}
